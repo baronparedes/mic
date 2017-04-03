@@ -1,0 +1,110 @@
+@import "variables.less";
+@import "mixins.less";
+@import "navigation.less";
+html,
+body {
+    min-height: 100%;
+    width: 100%;
+}
+
+body {
+    .serif-font;
+    color: @text-color;
+    background: url(../img/bg.jpg) repeat-x #b0d169;
+}
+
+hr {
+    border-color: @theme-primary;
+    border-width: 3px;
+    max-width: 50px;
+}
+
+hr.light {
+    border-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    .sans-serif-font;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.img-kariton{
+    height: 50%;
+    width: 50%;
+    margin: auto;
+}
+
+.brand-title{
+    strong{
+        color: darkorange;
+    }
+}
+
+.brand-logo{
+    height: 120px;
+    width: 120px;
+}
+
+.bg-primary {
+    background-color: @theme-primary;
+}
+
+.bg-light {
+    background-color: @theme-light;
+}
+
+.text-faded {
+    color: fade(@theme-light, 70%);
+}
+
+section {
+    padding: 100px 0;
+}
+
+aside {
+    padding: 50px 0;
+}
+
+.push-down {
+    padding-top: 50px;
+}
+
+.padded {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.container-content {
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.kariton {
+    height: 50%;
+}
+
+.btn-default{
+    background-image: none;
+    background-color: @theme-dark;
+    color: @text-contrast;
+}

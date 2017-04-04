@@ -1,5 +1,6 @@
 import React from 'react'
 import { Image, Grid, Row, Col, Button } from 'react-bootstrap/lib'
+import { Link } from 'react-router-dom'
 
 export default class HomeView extends React.Component {
     render() {
@@ -27,7 +28,9 @@ export default class HomeView extends React.Component {
                     LET US SHARE OUR ABUNDANT BLESSINGS... Give love everyday
                 </h2>
                 <Button>
-                    Find out more
+                    <Link to="/plans">
+                        Find out more
+                    </Link>
                 </Button>
             </div>
         );

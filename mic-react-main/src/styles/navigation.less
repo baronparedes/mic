@@ -47,27 +47,17 @@
                 color: @colDefault;
                 &:hover,
                 &:focus {
-                    color: @colHighlight;
+                    color: @colContrast;
+                    background-color: @bgHighlight;
                 }
+            }
+            >a.open,
+            >a.active {
+                color: @colContrast;
+                background-color: @bgHighlight;
             }
         }
         .ddm;
-        >.active {
-            >a,
-            >a:hover,
-            >a:focus {
-                color: @colHighlight;
-                background-color: @bgHighlight;
-            }
-        }
-        >.open {
-            >a,
-            >a:hover,
-            >a:focus {
-                color: @colHighlight;
-                background-color: @bgHighlight;
-            }
-        }
     }
     .navbar-toggle {
         border-color: @bgHighlight;

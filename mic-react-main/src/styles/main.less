@@ -38,19 +38,19 @@ p {
     margin-bottom: 20px;
 }
 
-.img-kariton{
+.img-kariton {
     height: 50%;
     width: 50%;
     margin: auto;
 }
 
-.brand-title{
-    strong{
-        color: darkorange;
+.brand-title {
+    strong {
+        color: darkgreen;
     }
 }
 
-.brand-logo{
+.brand-logo {
     height: 120px;
     width: 120px;
 }
@@ -103,8 +103,23 @@ aside {
     height: 50%;
 }
 
-.btn-default{
+.btn-default {
     background-image: none;
-    background-color: @theme-dark;
     color: @text-contrast;
+    background-color: @theme-dark;
+    &:hover {
+        color: @text-color;
+        background-color: @theme-light;
+        >a{
+            color: @text-color;
+        }
+    }
+    >a{
+        color: @text-contrast;
+        text-decoration: none;
+        &:hover,
+        &:focus {
+            color: @text-color;
+        }
+    }
 }

@@ -7,6 +7,6 @@ import 'bootstrap/dist/css/bootstrap-theme.min.css'
 
 import './styles/main.less'
 
-import App from './components/App'
+import AppRouter from './components/AppRouter'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<AppRouter />, document.getElementById('root'));

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Image, Grid, Row, Col, Button } from 'react-bootstrap/lib'
 
-export default class HomeInfo extends React.Component {
+export default class HomeView extends React.Component {
     render() {
         return (
             <div className="container-fluid">

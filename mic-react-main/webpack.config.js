@@ -174,8 +174,9 @@ module.exports = {
   entry: {
     js: './index.jsx',
     vendor: [
-      'react-dom',
       'react',
+      'react-dom',
+      'react-router-dom',
       'react-bootstrap'
     ],
   },

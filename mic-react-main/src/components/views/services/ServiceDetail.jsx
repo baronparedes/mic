@@ -1,17 +1,17 @@
 import React from 'react';
-import { Col } from 'react-bootstrap/lib'
+import Column from '../../layout/Column'
 
 const ServiceDetail = (props) => {
     return (
-        <Col sm={6} md={4} lg={3} className="text-center">
+        <Column>
             <div className="service-box">
                 <i className={"fa fa-4x text-primary sr-icons " + props.favicon}></i>
-                <h3>{props.label}</h3>
+                <h3><strong>{props.label}</strong></h3>
                 <h4>
                     {props.children}
                 </h4>
             </div>
-        </Col>
+        </Column>
     );
 };
 

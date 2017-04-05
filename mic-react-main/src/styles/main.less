@@ -50,29 +50,8 @@ p {
     }
 }
 
-.brand-logo {
-    height: 120px;
-    width: 120px;
-}
-
-.bg-primary {
-    background-color: @theme-primary;
-}
-
-.bg-light {
-    background-color: @theme-light;
-}
-
 .text-faded {
     color: fade(@theme-light, 70%);
-}
-
-section {
-    padding: 100px 0;
-}
-
-aside {
-    padding: 50px 0;
 }
 
 .push-down {
@@ -96,7 +75,6 @@ aside {
     background-color: white;
     border-radius: 10px;
     margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 .kariton {
@@ -110,11 +88,11 @@ aside {
     &:hover {
         color: @text-color;
         background-color: @theme-light;
-        >a{
+        >a {
             color: @text-color;
         }
     }
-    >a{
+    >a {
         color: @text-contrast;
         text-decoration: none;
         &:hover,
@@ -124,10 +102,63 @@ aside {
     }
 }
 
-i.fa{
-    color: @theme-primary;
+i.fa {
+    color: @theme-dark;
 }
 
-.service-box{
-    padding: 20px;
+.partner-box {
+    height: 200px;
+    text-align: center;
+    margin: 1em 0;
+    img {
+        max-height: 200px;
+        max-width: 240px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
+
+.service-box {
+    height: 300px;
+    padding-top: 10px;
+}
+
+.header-col {
+    height: 180px;
+}
+
+.brand-logo {
+    height: 100%;
+    max-width: 100%;
+}
+
+.brand-info {
+    h1 {
+        font-size: 42px;
+    }
+}
+
+.footer-content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: @text-color;
+    font-size: 24px;
+    font-weight: 600;
+    .sans-serif-font;
+}
+
+.spacer{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.team-member{
+    height: 180px;
+    img{
+        max-height: 100px;
+        max-width: 100px;
+    }
+}
+

@@ -5,7 +5,7 @@ import ServiceDetail from './ServiceDetail'
 class ServiceView extends Component {
     render() {
         return (
-            <div>
+            <div className="container-fluid">
                 <h2>At Your Service</h2>
                 <br />
                 <Grid fluid>

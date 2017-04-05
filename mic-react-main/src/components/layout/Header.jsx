@@ -6,16 +6,18 @@ export default class Header extends React.Component {
         return (
             <Grid fluid>
                 <Row>
-                    <Col md={3}>
-                        <Image src="/img/mic-logo-1.png" />
+                    <Col md={3} sm={12} className="header-col">
+                        <Image src="/img/mic-logo-1.png" className="brand-logo" />
                     </Col>
-                    <Col md={6} sm={12}>
-                        <h1 className="brand-title">
-                            <strong>M</strong>edical and <strong>I</strong>nsurance <strong>C</strong>are
-                        </h1>
-                        <h4>Your Trusted Service Partner</h4>
+                    <Col md={6} sm={12} className="header-col">
+                        <div className="brand-info">
+                            <h1 className="brand-title">
+                                <strong>M</strong>edical and <strong>I</strong>nsurance <strong>C</strong>are
+                            </h1>
+                            <h3>Your Trusted Service Partner</h3>
+                        </div>
                     </Col>
-                    <Col md={3}>
+                    <Col md={3} sm={12} className="header-col">
                         <Image src="/img/mic-logo-2.png" className="brand-logo" />
                     </Col>
                 </Row>

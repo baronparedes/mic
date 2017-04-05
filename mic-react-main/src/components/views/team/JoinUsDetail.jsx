@@ -5,7 +5,7 @@ const JoinUsDetail = (props) => {
     return (
         <Col className="join-us-box" lg={3} md={3} sm={6}>
             <h3>{props.title}</h3>
-            <p class="text-muted">
+            <p className="text-muted">
                 {props.details}
             </p>
         </Col>

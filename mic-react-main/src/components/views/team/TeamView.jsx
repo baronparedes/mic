@@ -3,6 +3,7 @@ import { Grid, Row, Button } from 'react-bootstrap/lib'
 import { Link } from 'react-router-dom'
 import TeamMember from './TeamMember'
 import JoinUsDetail from './JoinUsDetail'
+import TeamGallery from './TeamGallery'
 
 class TeamView extends Component {
     render() {
@@ -35,6 +36,7 @@ class TeamView extends Component {
                         Contact us!
                     </Link>
                 </Button>
+                <TeamGallery />
             </div>
         );
     }

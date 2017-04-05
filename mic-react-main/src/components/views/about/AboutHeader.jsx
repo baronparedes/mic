@@ -1,8 +1,8 @@
 import React from 'react';
 
-const AboutHeader = ({children}) => {
+const AboutHeader = (props) => {
     return (
-        <h2><strong>{children}</strong></h2>
+        <h3 className="text-muted">{props.children}</h3>
     );
 };
 

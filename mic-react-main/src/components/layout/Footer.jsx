@@ -8,24 +8,28 @@ const Footer = () => {
                 <Row>
                     <Col sm={12} md={4} lg={4}>
                         <div>
+                            <span>tel.</span>
+                            <span className="spacer" />
                             <span>+ 632 711 2235</span>
-                            <span className="spacer"/>
+                            <span className="spacer" />
                             <span>+ 632 703 9330</span>
                         </div>
 
                     </Col>
                     <Col sm={12} md={4} lg={4}>
-                        <span>
-                            &copy;2017 M I C
-                        </span>
+                        <div>
+                            <span>
+                                &copy;2017 M I C
+                            </span>
+                        </div>
                     </Col>
                     <Col sm={12} md={4} lg={4}>
                         <div>
-                            <i className="fa text-primary sr-icons fa-facebook" />
-                            <span className="spacer"/>
-                            <i className="fa text-primary sr-icons fa-twitter" />
-                            <span className="spacer"/>
-                            <i className="fa text-primary sr-icons fa-envelope" />
+                            <i className="fa fa-2x text-primary sr-icons fa-facebook-official" />
+                            <span className="spacer" />
+                            <i className="fa fa-2x text-primary sr-icons fa-twitter" />
+                            <span className="spacer" />
+                            <i className="fa fa-2x text-primary sr-icons fa-envelope" />
                         </div>
                     </Col>
                 </Row>

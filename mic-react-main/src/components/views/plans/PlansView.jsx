@@ -4,7 +4,8 @@ class PlansView extends Component {
     render() {
         return (
             <div className="container-fluid">
-                Plans
+                <h2>Available Plans</h2>
+                TO DO
             </div>
         );
     }

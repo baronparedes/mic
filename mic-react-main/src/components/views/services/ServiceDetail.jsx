@@ -6,10 +6,10 @@ const ServiceDetail = (props) => {
         <Column>
             <div className="service-box">
                 <i className={"fa fa-4x text-primary sr-icons " + props.favicon}></i>
-                <h3><strong>{props.label}</strong></h3>
-                <h4>
+                <h3>{props.label}</h3>
+                <p className="text-muted">
                     {props.children}
-                </h4>
+                </p>
             </div>
         </Column>
     );

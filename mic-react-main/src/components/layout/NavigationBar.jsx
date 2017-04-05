@@ -23,10 +23,10 @@ export default class NavigationBar extends React.Component {
                 <Navbar.Collapse>
                     <Nav pullRight>
                         <li role="presentation"><NavLink exact to="/">Home</NavLink></li>
+                        <li role="presentation"><NavLink to="/about">About</NavLink></li>
                         <li role="presentation"><NavLink to="/plans">Plans</NavLink></li>
                         <li role="presentation"><NavLink to="/services">Services</NavLink></li>
                         <li role="presentation"><NavLink to="/partners">Partners</NavLink></li>
-                        <li role="presentation"><NavLink to="/about">About</NavLink></li>
                         <li role="presentation"><NavLink to="/team">Our Team</NavLink></li>
                         <li role="presentation"><NavLink to="/contactus">Contact Us</NavLink></li>
                     </Nav>

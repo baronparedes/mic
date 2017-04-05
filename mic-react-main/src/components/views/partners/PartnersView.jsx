@@ -8,7 +8,7 @@ class PartnersView extends Component {
             <div className="container-fluid">
                 <Grid fluid>
                     <Row>
-                        <h1>HMO Partners</h1>
+                        <h2>HMO Partners</h2>
                         <PartnerDetail src="img/portfolio/partners/partner-maxicare.png" alt="Maxicare" />
                         <PartnerDetail src="img/portfolio/partners/partner-intellicare.png" alt="Intellicare" />
                         <PartnerDetail src="img/portfolio/partners/partner-asian-life.png" alt="Asian Life" />
@@ -21,7 +21,7 @@ class PartnersView extends Component {
                         <hr />
                     </Row>
                     <Row>
-                        <h1>Insurance Partners</h1>
+                        <h2>Insurance Partners</h2>
                         <PartnerDetail src="img/portfolio/partners/partner-flt.jpg" alt="FLT" />
                         <PartnerDetail src="img/portfolio/partners/partner-malayan.jpg" alt="Malayan" />
                         <PartnerDetail src="img/portfolio/partners/partner-sunlife-of-canada.jpg" alt="Sunlife of Canada" />

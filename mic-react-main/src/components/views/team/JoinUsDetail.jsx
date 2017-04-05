@@ -4,8 +4,8 @@ import { Col } from 'react-bootstrap/lib'
 const JoinUsDetail = (props) => {
     return (
         <Col className="join-us-box" lg={3} md={3} sm={6}>
-            <h2>{props.title}</h2>
-            <p class="text-muted ">
+            <h3>{props.title}</h3>
+            <p class="text-muted">
                 {props.details}
             </p>
         </Col>

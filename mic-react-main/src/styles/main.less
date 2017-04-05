@@ -23,12 +23,16 @@ hr.light {
     border-color: white;
 }
 
-h1,
-h2,
-h3,
-h4,
+h3 h4,
 h5,
 h6 {
+    .serif-font;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+    font-weight: 700;
     .sans-serif-font;
 }
 
@@ -45,7 +49,10 @@ p {
 }
 
 .brand-title {
+    text-transform: lowercase;
+    font-weight: 400;
     strong {
+        text-transform: uppercase;
         color: darkgreen;
     }
 }
@@ -102,10 +109,6 @@ p {
     }
 }
 
-i.fa {
-    color: @theme-dark;
-}
-
 .partner-box {
     height: 200px;
     text-align: center;
@@ -123,6 +126,9 @@ i.fa {
 .service-box {
     height: 300px;
     padding-top: 10px;
+    i.fa {
+        color: @theme-dark;
+    }
 }
 
 .header-col {
@@ -144,21 +150,40 @@ i.fa {
     padding-top: 10px;
     padding-bottom: 10px;
     color: @text-color;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
     .sans-serif-font;
 }
 
-.spacer{
+.spacer {
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.team-member{
+.team-member {
     height: 180px;
-    img{
+    img {
         max-height: 100px;
         max-width: 100px;
     }
 }
 
+.fa-facebook,
+.fa-facebook-square,
+.fa-facebook-official {
+    color: #3b5998
+}
+
+.fa-twitter-square,
+.fa-twitter,
+.fa-twitter {
+    color: #55acee;
+}
+
+.fa-envelope{
+    color: #ffffff;;
+}
+
+.fa-phone-square{
+    color: @theme-dark;
+}

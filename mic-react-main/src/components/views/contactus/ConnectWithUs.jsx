@@ -10,7 +10,7 @@ const ConnectWithUs = () => {
                 <span className="spacer" />
                 <span>tel.</span>
                 <p>
-                    <span>+632 711 2235</span>
+                    <span>+ 632 711 2235</span>
                     <br />
                     <span>+ 632 703 9330</span>
                 </p>
@@ -20,7 +20,7 @@ const ConnectWithUs = () => {
                 <span className="spacer" />
                 <span>fax</span>
                 <p>
-                    <span>+ 632 412 665</span>
+                    <span>+ 632 412 6659</span>
                 </p>
             </div>
             <div>

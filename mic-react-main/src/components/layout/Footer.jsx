@@ -25,16 +25,15 @@ const Footer = () => {
                     </Col>
                     <Col sm={12} md={4} lg={4}>
                         <div>
-
-                            <a href="http://twitter.com" target="_blank">
+                            <a href="http://twitter.com" target="_blank" title="Follow us on twitter">
                                 <i className="fa fa-2x text-primary sr-icons fa-twitter" />
                             </a>
                             <span className="spacer" />
-                            <a href="http://facebook.com" target="_blank">
+                            <a href="http://facebook.com" target="_blank" title="Add us on facebook">
                                 <i className="fa fa-2x text-primary sr-icons fa-facebook-official" />
                             </a>
                             <span className="spacer" />
-                            <a href="mailto:micmarketing@ymail.com">
+                            <a href="mailto:micmarketing@ymail.com" title="Send us an email">
                                 <i className="fa fa-2x text-primary sr-icons fa-envelope" />
                             </a>
                         </div>

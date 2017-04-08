@@ -107,6 +107,10 @@ p {
             color: @text-color;
         }
     }
+    &:disabled{
+        color: @text-color;
+        background-color: @theme-light;
+    }    
     >a {
         color: @text-contrast;
         text-decoration: none;
@@ -168,6 +172,11 @@ p {
     padding-right: 10px;
 }
 
+.sm-spacer{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 .team-member {
     height: 180px;
     img {
@@ -197,9 +206,11 @@ img.team-gallery {
 
 .fa-envelope {
     color: #ffffff;
-    ;
 }
 
+.fa-spinner,
+.fa-envelope-o,
+.fa-asterisk,
 .fa-phone-square {
     color: @theme-dark;
 }

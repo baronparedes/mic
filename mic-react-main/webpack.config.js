@@ -177,7 +177,8 @@ module.exports = {
       'react',
       'react-dom',
       'react-router-dom',
-      'react-bootstrap'
+      'react-bootstrap',
+      'classnames'
     ],
   },
   output: {

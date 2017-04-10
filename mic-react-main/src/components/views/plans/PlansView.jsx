@@ -1,5 +1,14 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col } from 'react-bootstrap'
+import { Grid, Row, Col, Button } from 'react-bootstrap'
+
+const SeePlan = (props) => {
+    return (
+        <Col lg={6} md={6} sm={12} className={"plan-container " + props.className}>
+            <h3>{props.title}</h3>
+            <Button>Inquire</Button>
+        </Col>
+    )
+}
 
 class PlansView extends Component {
     render() {
@@ -8,15 +17,12 @@ class PlansView extends Component {
                 <h2>Available Plans</h2>
                 <Grid fluid>
                     <Row>
-                        <Col lg={4} md={4} sm={12}>
-                            <h3>Individual</h3>
-                        </Col>
-                        <Col lg={4} md={4} sm={12}>
-                            <h3>Family</h3>
-                        </Col>
-                        <Col lg={4} md={4} sm={12}>
-                            <h3>Group or Corporate</h3>
-                        </Col>
+                        <SeePlan className="individual-family-plan" title="Individual or Family" />
+                        <SeePlan className="group-corporate-plan" title="Group or Corporate" />
+                    </Row>
+                    <hr />
+                    <Row>
+                        Content
                     </Row>
                 </Grid>
             </div>

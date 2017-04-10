@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col, Button } from 'react-bootstrap'
-import { Route, Link } from 'react-router-dom'
+import { Grid, Row, Col } from 'react-bootstrap'
+import { Route } from 'react-router-dom'
 import IndividualFamilyForm from './IndividualFamilyForm'
 import CorporateGroupForm from './CorporateGroupForm'
+import LinkButton from '../../layout/LinkButton'
 
 const SeePlan = (props) => {
     return (
@@ -12,11 +13,9 @@ const SeePlan = (props) => {
                 <p>
                     {props.children}
                 </p>
-                <Button>
-                    <Link to={"/plans" + props.to}>
-                        Ask for a Quotation
-                    </Link>
-                </Button>
+                <LinkButton to={"/plans" + props.to}>
+                    Ask for a Quotation
+                </LinkButton>
             </div>
         </Col>
     )

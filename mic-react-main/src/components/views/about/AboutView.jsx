@@ -1,8 +1,8 @@
 import React from 'react'
-import { Grid, Row, Col, Button } from 'react-bootstrap/lib'
-import { Link } from 'react-router-dom'
+import { Grid, Row, Col } from 'react-bootstrap/lib'
 import AboutDetail from './AboutDetail'
 import AboutHeader from './AboutHeader'
+import LinkButton from '../../layout/LinkButton'
 
 export default class AboutView extends React.Component {
     render() {
@@ -21,7 +21,7 @@ export default class AboutView extends React.Component {
                             <AboutHeader>Create harmonious relation environment.</AboutHeader>
                         </Col>
                     </Row>
-                    <hr/>
+                    <hr />
                     <Row>
                         <Col>
                             <AboutDetail label="Our History">
@@ -34,7 +34,7 @@ export default class AboutView extends React.Component {
                             </AboutDetail>
                         </Col>
                     </Row>
-                    <hr/>
+                    <hr />
                     <Row>
                         <Col md={6}>
                             <AboutDetail label="Our Vision">
@@ -52,10 +52,14 @@ export default class AboutView extends React.Component {
                     </Row>
                     <Row>
                         <Col md={6} sm={6}>
-                            <Button><Link to="/services">Our Services</Link></Button>
+                            <LinkButton to="/services">
+                                Our Services
+                            </LinkButton>
                         </Col>
                         <Col md={6} sm={6}>
-                            <Button><Link to="/partners">Our Partners</Link></Button>
+                            <LinkButton to="/partners">
+                                Our Partners
+                            </LinkButton>
                         </Col>
                     </Row>
                 </Grid>

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { Grid, Row, Button } from 'react-bootstrap/lib'
-import { Link } from 'react-router-dom'
+import { Grid, Row } from 'react-bootstrap/lib'
 import TeamMember from './TeamMember'
 import JoinUsDetail from './JoinUsDetail'
 import TeamGallery from './TeamGallery'
+import LinkButton from '../../layout/LinkButton'
+
 
 class TeamView extends Component {
     render() {
@@ -31,11 +32,9 @@ class TeamView extends Component {
                         <JoinUsDetail title="Do Business in your area" details="Without the need of a capital." />
                     </Row>
                 </Grid>
-                <Button>
-                    <Link to="/contactus">
-                        Contact us!
-                    </Link>
-                </Button>
+                <LinkButton to="/contactus">
+                    Contact us!
+                </LinkButton>
                 <TeamGallery />
             </div>
         );

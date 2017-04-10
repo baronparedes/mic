@@ -1,6 +1,6 @@
 import React from 'react'
-import { Image, Grid, Row, Col, Button } from 'react-bootstrap/lib'
-import { Link } from 'react-router-dom'
+import { Image, Grid, Row, Col } from 'react-bootstrap/lib'
+import LinkButton from '../../layout/LinkButton'
 
 const ServiceItem = (props) => {
     return (
@@ -59,11 +59,9 @@ export default class HomeView extends React.Component {
                 <h2>
                     LET US SHARE OUR ABUNDANT BLESSINGS... Give love everyday
                 </h2>
-                <Button>
-                    <Link to="/plans">
-                        Find out more
-                    </Link>
-                </Button>
+                <LinkButton to="/plans">
+                    Find out more
+                </LinkButton>
             </div>
         );
     }

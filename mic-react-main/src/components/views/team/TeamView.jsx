@@ -13,12 +13,12 @@ class TeamView extends Component {
                 <br />
                 <Grid fluid>
                     <Row>
-                        <TeamMember title="CEO" name="John Doe" src="img/portfolio/teams/blank-photo.png" />
-                        <TeamMember title="CEO" name="John Doe" src="img/portfolio/teams/blank-photo.png" />
-                        <TeamMember title="CEO" name="John Doe" src="img/portfolio/teams/blank-photo.png" />
-                        <TeamMember title="CEO" name="John Doe" src="img/portfolio/teams/blank-photo.png" />
-                        <TeamMember title="CEO" name="John Doe" src="img/portfolio/teams/blank-photo.png" />
-                        <TeamMember title="CEO" name="John Doe" src="img/portfolio/teams/blank-photo.png" />
+                        <TeamMember title="CEO" name="John Doe" src={require("img/portfolio/teams/blank-photo.png")} />
+                        <TeamMember title="CEO" name="John Doe" src={require("img/portfolio/teams/blank-photo.png")} />
+                        <TeamMember title="CEO" name="John Doe" src={require("img/portfolio/teams/blank-photo.png")} />
+                        <TeamMember title="CEO" name="John Doe" src={require("img/portfolio/teams/blank-photo.png")} />
+                        <TeamMember title="CEO" name="John Doe" src={require("img/portfolio/teams/blank-photo.png")} />
+                        <TeamMember title="CEO" name="John Doe" src={require("img/portfolio/teams/blank-photo.png")} />
                     </Row>
                 </Grid>
                 <hr />

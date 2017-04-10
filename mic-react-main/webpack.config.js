@@ -9,6 +9,7 @@ const nodeEnv = process.env.NODE_ENV || 'development';
 const isProduction = nodeEnv === 'production';
 
 const sourcePath = path.join(__dirname, "./src");
+const imagePath = path.join(__dirname, "./src/img");
 const buildPath = path.join(__dirname, "./build");
 
 console.log("isProduction: " + isProduction)
@@ -70,30 +71,6 @@ const loaders = [
         ],
     },
     {
-        test: /\.png$/,
-        use: "url-loader?limit=100000"
-    },
-    {
-        test: /\.(jpg|jpeg)$/,
-        use: "file-loader"
-    },
-    {
-        test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
-        use: 'url-loader?limit=10000&mimetype=application/font-woff'
-    },
-    {
-        test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
-        use: 'url-loader?limit=10000&mimetype=application/octet-stream'
-    },
-    {
-        test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
-        use: 'file-loader'
-    },
-    {
-        test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'url-loader?limit=10000&mimetype=image/svg+xml'
-    },
-    {
         test: /\.less$/,
         exclude: /node_modules/,
         use: extractLess.extract({
@@ -121,6 +98,30 @@ const loaders = [
             ],
             fallback: "style-loader"
         })
+    },
+    // {
+    //     test: /\.png$/,
+    //     use: "url-loader?limit=100000"
+    // },
+    {
+        test: /\.(jpg|png)$/,
+        use: "file-loader"
+    },
+    {
+        test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
+        use: 'url-loader?limit=10000&mimetype=application/font-woff'
+    },
+    {
+        test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
+        use: 'url-loader?limit=10000&mimetype=application/octet-stream'
+    },
+    {
+        test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
+        use: 'file-loader'
+    },
+    {
+        test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+        loader: 'url-loader?limit=10000&mimetype=image/svg+xml'
     }
 ]
 

@@ -47,7 +47,7 @@ export default class HomeView extends React.Component {
                                 <h3>
                                     Everytime you venture with us you are helping our poorest of the poor brothers...
                                 </h3>
-                                <Image className="img-kariton" src="/img/buhay-kariton.jpg" alt="242x200" responsive />
+                                <Image className="img-kariton" src={require("img/buhay-kariton.jpg")} alt="242x200" responsive />
                                 <h3>
                                     No one wants to live a miserable life but this is the only means they know to survive.
                                 </h3>

@@ -17,7 +17,7 @@ const ContactForm = (props) => {
             <fieldset disabled={props.loading}>
                 {props.children}
                 <FormGroup>
-                    <Col smOffset={2} sm={10}>
+                    <Col sm={12}>
                         <Button
                             type="submit"
                             disabled={props.loading}>

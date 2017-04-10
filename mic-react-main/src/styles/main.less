@@ -1,6 +1,7 @@
 @import "variables.less";
 @import "mixins.less";
 @import "navigation.less";
+@import "fa-colors.less";
 html,
 body {
     min-height: 100%;
@@ -42,27 +43,14 @@ p {
     margin-bottom: 20px;
 }
 
-.img-kariton {
-    height: 50%;
-    width: 50%;
-    margin: auto;
+.spacer {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.brand-title {
-    text-transform: lowercase;
-    font-weight: 400;
-    .brand-m {
-        text-transform: uppercase;
-        color: #FDE145;
-    }
-    .brand-i {
-        text-transform: uppercase;
-        color: #BF7941;
-    }
-    .brand-c {
-        text-transform: uppercase;
-        color: #ECB343;
-    }
+.sm-spacer {
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .text-faded {
@@ -82,35 +70,24 @@ p {
     padding: 0;
 }
 
-.header-content {
-    text-align: center;
-}
-
-.container-content {
-    background-color: white;
-    border-radius: 10px;
-    margin-top: 50px;
-}
-
-.kariton {
-    height: 50%;
-}
-
 .btn-default {
     background-image: none;
     color: @text-contrast;
     background-color: @theme-dark;
+    border: 0;
     &:hover {
         color: @text-color;
         background-color: @theme-light;
+        border: 1px solid @theme-dark;
         >a {
             color: @text-color;
         }
     }
-    &:disabled{
+    &:disabled {
+        border: 1px solid @theme-dark;
         color: @text-color;
         background-color: @theme-light;
-    }    
+    }
     >a {
         color: @text-contrast;
         text-decoration: none;
@@ -119,6 +96,73 @@ p {
             color: @text-color;
         }
     }
+}
+
+.home-content-left {
+    display: block;
+    margin: auto;
+    ul {
+        padding: 0;
+        padding-top: 30px;
+        list-style-type: none;
+        text-align: left;
+        li {
+            font-size: 24px;
+            font-weight: 700;
+            &.item-1 {
+                color: #02506B;
+            }
+            &.item-2 {
+                color: #8A2E20;
+            }
+            &.item-3 {
+                color: #3C256D;
+            }
+            &.item-4 {
+                color: #B64324;
+            }
+            &.item-5 {
+                color: #BC8221;
+            }
+            &.item-6 {
+                color: #0E742B;
+            }
+            &.item-7 {
+                color: #143025;
+            }
+        }
+    }
+}
+
+.kariton {
+    height: 50%;
+}
+
+.img-kariton {
+    height: 50%;
+    width: 50%;
+    margin: auto;
+}
+
+.brand-title {
+    text-transform: lowercase;
+    font-weight: 400;
+    .brand-m,
+    .brand-i,
+    .brand-c {
+        text-transform: uppercase;
+        color: #BF7941;
+    }
+}
+
+.header-content {
+    text-align: center;
+}
+
+.container-content {
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 50px;
 }
 
 .partner-box {
@@ -140,6 +184,32 @@ p {
     padding-top: 10px;
     i.fa {
         color: @theme-dark;
+    }
+}
+
+.plan-box {
+    min-height: 300px;
+    color: @text-light;
+    h3 {
+        font-weight: 400;
+        text-decoration: uppercase;
+    }
+    p {
+        padding-left: 20px;
+        padding-right: 20px;
+        color: @theme-light;
+    }
+    &.individual-family-plan {
+        background-image: url(../img/portfolio/plans/individual-family.jpg);
+        background-repeat: no-repeat;
+        padding: 0;
+        margin: 0;
+    }
+    &.group-corporate-plan {
+        background-image: url(../img/portfolio/plans/group-corporate.jpg);
+        background-repeat: no-repeat;
+        padding: 0;
+        margin: 0;
     }
 }
 
@@ -167,16 +237,6 @@ p {
     .sans-serif-font;
 }
 
-.spacer {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.sm-spacer{
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
 .team-member {
     height: 180px;
     img {
@@ -190,27 +250,4 @@ img.team-gallery {
     max-width: 900px;
     vertical-align: center;
     margin: 0 auto;
-}
-
-.fa-facebook,
-.fa-facebook-square,
-.fa-facebook-official {
-    color: #3b5998
-}
-
-.fa-twitter-square,
-.fa-twitter,
-.fa-twitter {
-    color: #55acee;
-}
-
-.fa-envelope {
-    color: #ffffff;
-}
-
-.fa-spinner,
-.fa-envelope-o,
-.fa-asterisk,
-.fa-phone-square {
-    color: @theme-dark;
 }

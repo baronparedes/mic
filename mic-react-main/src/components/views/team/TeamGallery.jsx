@@ -8,7 +8,7 @@ const TeamGallery = () => {
             <br />
             <Carousel>
                 {[...Array(11)].map((x, i) =>
-                    <Carousel.Item>
+                    <Carousel.Item key={i + 1}>
                         <img className="team-gallery" src={"img/portfolio/team-gallery/" + (i + 1) + ".jpg"} />
                     </Carousel.Item>
                 )}

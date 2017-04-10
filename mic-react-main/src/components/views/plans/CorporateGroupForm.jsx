@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ContactForm from '../../layout/ContactForm'
 import ContactField from '../../layout/ContactField'
 
-class GetInTouchForm extends Component {
+class CorporateGroupForm extends Component {
     constructor(props) {
         super(props);
     }
@@ -57,7 +57,7 @@ class GetInTouchForm extends Component {
     render() {
         return (
             <div className="container-fluid">
-                <h2>Get in touch</h2>
+                <h2>Corporate or Group</h2>
                 <ContactForm loading={this.state.loading} handleSubmit={this.handleSubmit.bind(this)}>
                     <ContactField
                         controlId="form-company"
@@ -121,4 +121,4 @@ class GetInTouchForm extends Component {
     }
 }
 
-export default GetInTouchForm;
+export default CorporateGroupForm;

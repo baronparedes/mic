@@ -44,13 +44,13 @@ export default class HomeView extends React.Component {
                                 </ul>
                             </Col>
                             <Col md={6} lg={6} className="home-content-right">
-                                <h3>
+                                <h2>
                                     Everytime you venture with us you are helping our poorest of the poor brothers...
-                                </h3>
+                                </h2>
                                 <Image className="img-kariton" src={require("img/buhay-kariton.jpg")} alt="242x200" responsive />
-                                <h3>
+                                <h2>
                                     No one wants to live a miserable life but this is the only means they know to survive.
-                                </h3>
+                                </h2>
                             </Col>
                         </Row>
                     </Grid>

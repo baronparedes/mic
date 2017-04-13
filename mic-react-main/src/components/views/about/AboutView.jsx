@@ -51,12 +51,12 @@ export default class AboutView extends React.Component {
                         </Col>
                     </Row>
                     <Row>
-                        <Col md={6} sm={6}>
+                        <Col md={6} sm={6} xs={6}>
                             <LinkButton to="/services">
                                 Our Services
                             </LinkButton>
                         </Col>
-                        <Col md={6} sm={6}>
+                        <Col md={6} sm={6} xs={6}>
                             <LinkButton to="/partners">
                                 Our Partners
                             </LinkButton>

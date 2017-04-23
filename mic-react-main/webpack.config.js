@@ -16,10 +16,14 @@ console.log("isProduction: " + isProduction)
 
 const extractLess = new ExtractTextPlugin({
     filename: "app-[hash].css",
+    disable: process.env.NODE_ENV === "development",
+    allChunks: true
 });
 
 const extractCSS = new ExtractTextPlugin({
     filename: "vendor-[hash].css",
+    disable: process.env.NODE_ENV === "development",
+    allChunks: true
 });
 
 const plugins = [
@@ -52,14 +56,8 @@ const plugins = [
             context: sourcePath,
         },
     }),
-    new ExtractTextPlugin({
-        filename: "app-[hash].css",
-        disable: process.env.NODE_ENV === "development"
-    }),
-    new ExtractTextPlugin({
-        filename: "vendor-[hash].css",
-        disable: process.env.NODE_ENV === "development"
-    })
+    extractCSS,
+    extractLess
 ];
 
 const loaders = [
@@ -69,6 +67,20 @@ const loaders = [
         use: [
             'babel-loader',
         ],
+    },
+    {
+        test: /\.css$/,
+        use: extractCSS.extract({
+            use: [
+                {
+                    loader: "css-loader"
+                },
+                {
+                    loader: "postcss-loader"
+                }
+            ],
+            fallback: "style-loader"
+        })
     },
     {
         test: /\.less$/,
@@ -85,24 +97,6 @@ const loaders = [
             fallback: "style-loader"
         })
     },
-    {
-        test: /\.css$/,
-        use: extractCSS.extract({
-            use: [
-                {
-                    loader: "css-loader"
-                },
-                {
-                    loader: "postcss-loader"
-                }
-            ],
-            fallback: "style-loader"
-        })
-    },
-    // {
-    //     test: /\.png$/,
-    //     use: "url-loader?limit=100000"
-    // },
     {
         test: /\.(jpg|png)$/,
         use: "file-loader"

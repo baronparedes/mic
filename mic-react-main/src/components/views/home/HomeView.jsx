@@ -5,8 +5,12 @@ import LinkButton from '../../layout/LinkButton'
 const ServiceItem = (props) => {
     return (
         <li className={props.className}>
-            <i className="fa fa-chevron-right spacer" />
-            {props.children}
+            { 
+                // <i className="fa fa-chevron-right spacer" /> 
+            }
+            <h2>
+                {props.children}
+            </h2>
         </li>
     )
 }
@@ -21,36 +25,36 @@ export default class HomeView extends React.Component {
                             <Col md={6} lg={6} className="home-content-left">
                                 <ul>
                                     <ServiceItem className="item-1">
-                                        Life Insurance
+                                        Comprehensive Health Care
                                     </ServiceItem>
                                     <ServiceItem className="item-2">
-                                        Travel Insurance
+                                        Manpower Health Care
                                     </ServiceItem>
                                     <ServiceItem className="item-3">
-                                        Group Life Insurance
+                                        Life Insurance
                                     </ServiceItem>
                                     <ServiceItem className="item-4">
-                                        Health Care Program
+                                        Non-Life Insurance
                                     </ServiceItem>
                                     <ServiceItem className="item-5">
-                                        Pre need Plans
+                                        Group Life Insurance
                                     </ServiceItem>
                                     <ServiceItem className="item-6">
-                                        Non Life Insurance
+                                        Travel Insurance
                                     </ServiceItem>
                                     <ServiceItem className="item-7">
-                                        Medical and Health Protection
+                                        Pre-need Plans
                                     </ServiceItem>
                                 </ul>
                             </Col>
                             <Col md={6} lg={6} className="home-content-right">
-                                <h2>
+                                <h3>
                                     Everytime you venture with us you are helping our poorest of the poor brothers...
-                                </h2>
+                                </h3>
                                 <Image className="img-kariton" src={require("img/buhay-kariton.jpg")} alt="242x200" responsive />
-                                <h2>
+                                <h3>
                                     No one wants to live a miserable life but this is the only means they know to survive.
-                                </h2>
+                                </h3>
                             </Col>
                         </Row>
                     </Grid>

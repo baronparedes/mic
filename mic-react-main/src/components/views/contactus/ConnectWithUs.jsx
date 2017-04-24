@@ -12,14 +12,6 @@ const ConnectWithUs = () => {
                 <p>
                     <span>+ 632 711 2235</span>
                     <br />
-                    <span>+ 632 703 9330</span>
-                </p>
-            </div>
-            <div>
-                <i className="fa fa-2x text-primary sr-icons fa-fax" />
-                <span className="spacer" />
-                <span>fax</span>
-                <p>
                     <span>+ 632 412 6659</span>
                 </p>
             </div>

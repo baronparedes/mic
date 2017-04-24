@@ -30,7 +30,8 @@ const plugins = [
     new HtmlWebpackPlugin({
         template: path.join(sourcePath, 'index.html'),
         path: buildPath,
-        filename: 'index.html'
+        filename: 'index.html',
+        favicon: "img/favicon.ico"
     }),
     new webpack.optimize.CommonsChunkPlugin({
         name: 'vendor',

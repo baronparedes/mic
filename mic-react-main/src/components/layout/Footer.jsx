@@ -12,7 +12,7 @@ const Footer = () => {
                             <span className="spacer" />
                             <span>+ 632 711 2235</span>
                             <span className="spacer" />
-                            <span>+ 632 703 9330</span>
+                            <span>+ 632 412 6659</span>
                         </div>
 
                     </Col>

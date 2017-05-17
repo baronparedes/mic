@@ -8,7 +8,7 @@ export default class Header extends React.Component {
             <Grid fluid>
                 <Row>
                     <Col lg={3} md={3} sm={6} xs={6} className="header-col">
-                        <Image src={require("img/mic-logo-1.png")} className="brand-logo" />
+                        <Image src={require("img/mic-logo-1.jpg")} className="brand-logo" />
                     </Col>
                     <Col lg={6} md={6} smHidden xsHidden className="header-col">
                         <HeaderBrand />

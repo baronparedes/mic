@@ -41,10 +41,10 @@ class PlansView extends Component {
                 <Grid fluid>
                     <Row>
                         <SeePlan className="individual-family-plan" title="Individual or Family" to='/individual'>
-                            Labore cupidatat cillum quis qui deserunt proident fugiat fugiat. Id anim magna exercitation dolor. Qui sit amet voluptate ipsum mollit id mollit elit ea sint non voluptate.
+                            WE ARE EXPOSED TO UNHEALTHY AND HAZARDOUS ENVIRONMENT. THIS IS THE REASON WHY WE NEED TO PROTECT OURSELVES AND OUR FAMILY. MIC IS OFFERING AFFORDABLE BASIC AND COMPREHENSIVE HEALTH CARE AND INSURANCE PROTECTION, SO WE ARE ALWAYS READY IN TIME OF NEEDS.
                         </SeePlan>
                         <SeePlan className="group-corporate-plan" title="Corporate or Group" to='/corporate'>
-                            Ipsum irure excepteur et exercitation. Eiusmod commodo irure tempor irure. Est exercitation laboris voluptate Lorem duis deserunt esse labore ullamco velit eiusmod sit duis.
+                            EMPLOYEES ARE THE MOST VALUABLE ASSET OF THE COMPANY. PRODUCTIVITY MAY SUFFER IF THEY ARE NOT HEALTHY.  MIC IS WILLING TO HELP YOU IN OUTSOURCING FOR THE BEST HEALTH CARE PACKAGE, TAILORED FIT FOR YOUR COMPANY.
                         </SeePlan>
                     </Row>
                     <hr />

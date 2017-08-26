@@ -12,7 +12,7 @@ class IndividualFamilyForm extends Component {
         age: '',
         email: '',
         contact: '',
-        notes: '',
+        message: '',
         errors: {},
         loading: false
     }
@@ -37,7 +37,7 @@ class IndividualFamilyForm extends Component {
         if (this.state.age === '') errors.age = "*";
         if (this.state.email === '') errors.email = "*";
         if (this.state.contact === '') errors.contact = "*";
-        if (this.state.notes === '') errors.notes = "*";
+        if (this.state.message === '') errors.message = "*";
         this.setState({ errors });
         return errors;
     }
@@ -50,10 +50,15 @@ class IndividualFamilyForm extends Component {
         }
     }
 
+    componentDidMount() {
+        this.link.click();
+    }
+
     render() {
         return (
-            <div className="container-fluid">
+            <div className="container-fluid" id="plan">
                 <h2>Individual or Family</h2>
+                <a href="#plan" ref={(link) => { this.link = link; }}></a>
                 <ContactForm loading={this.state.loading} handleSubmit={this.handleSubmit.bind(this)}>
                     <ContactField
                         controlId="form-name"
@@ -88,12 +93,12 @@ class IndividualFamilyForm extends Component {
                         value={this.state.contact}
                         handleChange={this.handleChange.bind(this)} />
                     <ContactField
-                        controlId="form-notes"
+                        controlId="form-message"
                         type="textarea"
-                        name="notes"
-                        label="notes"
-                        error={this.state.errors.notes}
-                        value={this.state.notes}
+                        name="message"
+                        label="message"
+                        error={this.state.errors.message}
+                        value={this.state.message}
                         handleChange={this.handleChange.bind(this)} />
                 </ContactForm>
             </div>

@@ -14,7 +14,6 @@ const Footer = () => {
                             <span className="spacer" />
                             <span>+ 632 412 6659</span>
                         </div>
-
                     </Col>
                     <Col sm={12} md={4} lg={4}>
                         <div>
@@ -23,7 +22,7 @@ const Footer = () => {
                             </span>
                         </div>
                     </Col>
-                    <Col sm={12} md={4} lg={4}>
+                    <Col xs={12} sm={12} md={4} lg={4}>
                         <div>
                             <a href="http://twitter.com" target="_blank" title="Follow us on twitter">
                                 <i className="fa fa-2x text-primary sr-icons fa-twitter" />

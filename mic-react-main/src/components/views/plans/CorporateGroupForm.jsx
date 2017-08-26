@@ -14,7 +14,7 @@ class CorporateGroupForm extends Component {
         email: '',
         contactPerson: '',
         contact: '',
-        notes: '',
+        message: '',
         errors: {},
         loading: false
     }
@@ -41,7 +41,7 @@ class CorporateGroupForm extends Component {
         if (this.state.email === '') errors.email = "*";
         if (this.state.contactPerson === '') errors.contactPerson = "*";
         if (this.state.contact === '') errors.contact = "*";
-        if (this.state.notes === '') errors.notes = "*";
+        if (this.state.message === '') errors.message = "*";
         this.setState({ errors });
         return errors;
     }
@@ -54,10 +54,15 @@ class CorporateGroupForm extends Component {
         }
     }
 
+    componentDidMount() {
+        this.link.click();
+    }
+
     render() {
         return (
-            <div className="container-fluid">
+            <div className="container-fluid" id="plan">
                 <h2>Corporate or Group</h2>
+                <a href="#plan" ref={(link) => { this.link = link; }}></a>
                 <ContactForm loading={this.state.loading} handleSubmit={this.handleSubmit.bind(this)}>
                     <ContactField
                         controlId="form-company"
@@ -108,12 +113,12 @@ class CorporateGroupForm extends Component {
                         value={this.state.contact}
                         handleChange={this.handleChange.bind(this)} />
                     <ContactField
-                        controlId="form-notes"
+                        controlId="form-message"
                         type="textarea"
-                        name="notes"
-                        label="notes"
-                        error={this.state.errors.notes}
-                        value={this.state.notes}
+                        name="message"
+                        label="message"
+                        error={this.state.errors.message}
+                        value={this.state.message}
                         handleChange={this.handleChange.bind(this)} />
                 </ContactForm>
             </div>

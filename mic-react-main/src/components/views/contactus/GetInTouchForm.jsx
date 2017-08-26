@@ -11,7 +11,7 @@ class GetInTouchForm extends Component {
         name: '',
         email: '',
         contact: '',
-        notes: '',
+        message: '',
         errors: {},
         loading: false
     }
@@ -35,7 +35,7 @@ class GetInTouchForm extends Component {
         if (this.state.name === '') errors.name = "*";
         if (this.state.email === '') errors.email = "*";
         if (this.state.contact === '') errors.contact = "*";
-        if (this.state.notes === '') errors.notes = "*";
+        if (this.state.message === '') errors.message = "*";
         this.setState({ errors });
         return errors;
     }
@@ -51,7 +51,7 @@ class GetInTouchForm extends Component {
     render() {
         return (
             <div className="container-fluid">
-                <h2>Get in touch</h2>
+                <h2>Send us your inquiry</h2>
                 <ContactForm loading={this.state.loading} handleSubmit={this.handleSubmit.bind(this)}>
                     <ContactField
                         controlId="form-name"
@@ -78,12 +78,12 @@ class GetInTouchForm extends Component {
                         value={this.state.contact}
                         handleChange={this.handleChange.bind(this)} />
                     <ContactField
-                        controlId="form-notes"
+                        controlId="form-message"
                         type="textarea"
-                        name="notes"
-                        label="notes"
-                        error={this.state.errors.notes}
-                        value={this.state.notes}
+                        name="message"
+                        label="message"
+                        error={this.state.errors.message}
+                        value={this.state.message}
                         handleChange={this.handleChange.bind(this)} />
                 </ContactForm>
             </div>

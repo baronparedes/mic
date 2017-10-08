@@ -10,19 +10,6 @@ class TeamView extends Component {
     render() {
         return (
             <div className="container-fluid">
-                <h2>Meet our Team!</h2>
-                <br />
-                <Grid fluid>
-                    <Row>
-                        <TeamMember title="CEO" name="John Doe" src={require("img/portfolio/teams/blank-photo.png")} />
-                        <TeamMember title="CEO" name="John Doe" src={require("img/portfolio/teams/blank-photo.png")} />
-                        <TeamMember title="CEO" name="John Doe" src={require("img/portfolio/teams/blank-photo.png")} />
-                        <TeamMember title="CEO" name="John Doe" src={require("img/portfolio/teams/blank-photo.png")} />
-                        <TeamMember title="CEO" name="John Doe" src={require("img/portfolio/teams/blank-photo.png")} />
-                        <TeamMember title="CEO" name="John Doe" src={require("img/portfolio/teams/blank-photo.png")} />
-                    </Row>
-                </Grid>
-                <hr />
                 <h2>Join us!</h2>
                 <Grid fluid>
                     <Row>

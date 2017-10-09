@@ -163,7 +163,8 @@ module.exports = {
             'react-dom',
             'react-router-dom',
             'react-bootstrap',
-            'classnames'
+            'classnames',
+            'axios'
         ],
     },
     output: {

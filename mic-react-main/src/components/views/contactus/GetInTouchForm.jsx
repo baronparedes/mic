@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ContactForm from '../../layout/ContactForm'
 import ContactField from '../../layout/ContactField'
+import { getInTouch } from '../../../api/contact'
 
 class GetInTouchForm extends Component {
     constructor(props) {
@@ -44,8 +45,17 @@ class GetInTouchForm extends Component {
         e.preventDefault();
         const isValid = Object.keys(this.handleErrors()).length === 0;
         if (isValid) {
-            this.setState({ loading: true });
+            this.setState({ loading: true }, this.handleContact.bind(this));
         }
+    }
+
+    handleContact() {
+        console.log("inquiring");
+        getInTouch(this.state.name,
+            this.state.email,
+            this.state.contact,
+            this.state.message,
+            () => { this.setState({ loading: false}) })
     }
 
     render() {

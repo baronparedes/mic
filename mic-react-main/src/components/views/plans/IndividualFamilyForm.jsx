@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ContactForm from '../../layout/ContactForm'
 import ContactField from '../../layout/ContactField'
+import { inquireIndividualPlan } from '../../../api/contact'
 
 class IndividualFamilyForm extends Component {
     constructor(props) {
@@ -46,8 +47,18 @@ class IndividualFamilyForm extends Component {
         e.preventDefault();
         const isValid = Object.keys(this.handleErrors()).length === 0;
         if (isValid) {
-            this.setState({ loading: true });
+            this.setState({ loading: true }, this.handleContact.bind(this));
         }
+    }
+
+    handleContact() {
+        console.log("inquiring...");
+        inquireIndividualPlan(this.state.name,
+            this.state.age,
+            this.state.email,
+            this.state.contact,
+            this.state.message,
+            () => { this.setState({ loading: false }) })
     }
 
     componentDidMount() {

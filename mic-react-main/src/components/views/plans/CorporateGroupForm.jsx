@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ContactForm from '../../layout/ContactForm'
 import ContactField from '../../layout/ContactField'
+import { inquireCorporatePlan } from '../../../api/contact'
 
 class CorporateGroupForm extends Component {
     constructor(props) {
@@ -50,8 +51,20 @@ class CorporateGroupForm extends Component {
         e.preventDefault();
         const isValid = Object.keys(this.handleErrors()).length === 0;
         if (isValid) {
-            this.setState({ loading: true });
+            this.setState({ loading: true }, this.handleContact.bind(this));
         }
+    }
+
+    handleContact() {
+        console.log("inquiring...");
+        inquireCorporatePlan(this.state.company,
+            this.state.employees,
+            this.state.natureOfBusiness,
+            this.state.email,
+            this.state.contactPerson,
+            this.state.contact,
+            this.state.message,
+            () => { this.setState({ loading: false }) })
     }
 
     componentDidMount() {

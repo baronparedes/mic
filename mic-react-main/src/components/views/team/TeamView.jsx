@@ -4,12 +4,14 @@ import TeamMember from './TeamMember'
 import JoinUsDetail from './JoinUsDetail'
 import TeamGallery from './TeamGallery'
 import LinkButton from '../../layout/LinkButton'
-
+import MeetOurTeam from './MeetOurTeam'
 
 class TeamView extends Component {
     render() {
         return (
             <div className="container-fluid">
+                <MeetOurTeam />
+                <hr />
                 <h2>Join us!</h2>
                 <Grid fluid>
                     <Row>

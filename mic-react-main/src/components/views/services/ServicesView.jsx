@@ -51,13 +51,10 @@ class ServiceView extends Component {
                             </div>
                         </ServiceDetail>
                         <ServiceDetail label="Food Suppliments" favicon="fa-envira">
-                            Qui exercitation nisi excepteur eiusmod aute reprehenderit esse aliqua cillum labore sint dolore dolor est.
                         </ServiceDetail>
                         <ServiceDetail label="Medical Supplies and Equipment" favicon="fa-medkit">
-                            Qui exercitation nisi excepteur eiusmod aute reprehenderit esse aliqua cillum labore sint dolore dolor est.
                         </ServiceDetail>
                         <ServiceDetail label="Dental Supplies and Equipment" favicon="fa-briefcase">
-                            Qui exercitation nisi excepteur eiusmod aute reprehenderit esse aliqua cillum labore sint dolore dolor est.
                         </ServiceDetail>
                     </Row>
                 </Grid>

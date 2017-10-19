@@ -14,27 +14,27 @@ const data = [
         image: "editham.png"
     },
     {
-        title: <span>Vice Presiden for Marketingt<br/>Luzon-Visayas & Mindanao Area</span>,
+        title: <span>Vice President for Marketing<br/>Luzon-Visayas & Mindanao Area</span>,
         name: "MARLIE MELBA P. FERMIN",
         image: "marlief.png"
     },
     {
-        title: <span>Vice Presiden for Marketingt<br/>Metro Manila & North Luzon</span>,
+        title: <span>Vice President for Marketing<br/>Metro Manila & North Luzon</span>,
         name: "MA. GENNA P. GUEVARRA",
         image: "gennag.png"
     },
     {
-        title: <span>Vice Presiden for Marketingt<br/>Mindanao Area</span>,
+        title: <span>Vice President for Marketing<br/>Mindanao Area</span>,
         name: "MYRNA A. ABAPO",
         image: "myrnaa.png"
     },
     {
-        title: <span>Vice Presiden for Marketingt<br/>Metro Manila & South Luzon</span>,
+        title: <span>Vice President for Marketing<br/>Metro Manila & South Luzon</span>,
         name: "EDUARDO V. SANTIAGO",
         image: "blank-photo.png"
     },
     {
-        title: <span>Vice Presiden for Marketingt<br/>Research and Dev</span>,
+        title: <span>Vice President for Marketing<br/>Research and Dev</span>,
         name: "DHIANNA MONICA B. MICALLER",
         image: "dhiannam.png"
     },

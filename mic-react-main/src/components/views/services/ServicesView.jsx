@@ -52,9 +52,7 @@ class ServiceView extends Component {
                         </ServiceDetail>
                         <ServiceDetail label="Food Suppliments" favicon="fa-envira">
                         </ServiceDetail>
-                        <ServiceDetail label="Medical Supplies and Equipment" favicon="fa-medkit">
-                        </ServiceDetail>
-                        <ServiceDetail label="Dental Supplies and Equipment" favicon="fa-briefcase">
+                        <ServiceDetail label="Medicine and Medical Supply" favicon="fa-medkit">
                         </ServiceDetail>
                     </Row>
                 </Grid>

@@ -50,7 +50,7 @@ class ServiceView extends Component {
                                 </p>
                             </div>
                         </ServiceDetail>
-                        <ServiceDetail label="Food Suppliments" favicon="fa-envira">
+                        <ServiceDetail label="Food Supplements" favicon="fa-envira">
                         </ServiceDetail>
                         <ServiceDetail label="Medicine and Medical Supply" favicon="fa-medkit">
                         </ServiceDetail>

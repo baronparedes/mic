@@ -55,7 +55,17 @@ class GetInTouchForm extends Component {
             this.state.email,
             this.state.contact,
             this.state.message,
-            () => { this.setState({ loading: false}) })
+            this.handleContactComplete.bind(this))
+    }
+
+    handleContactComplete() {
+        this.setState({ 
+            name: '',
+            email: '',
+            contact: '',
+            message: '',
+            loading: false
+        });
     }
 
     render() {

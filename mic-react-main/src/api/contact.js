@@ -38,7 +38,7 @@ export function inquireCorporatePlan(company, employees, natureOfBusiness, email
 }
 
 function sendMessage(message, completedCallback) {
-    axios.get('api/sendmail', { 
+    axios.post('api/sendmail', { 
         ...message 
     }).then((data) => {
         if (completedCallback) {

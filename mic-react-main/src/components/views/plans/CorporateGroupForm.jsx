@@ -64,7 +64,20 @@ class CorporateGroupForm extends Component {
             this.state.contactPerson,
             this.state.contact,
             this.state.message,
-            () => { this.setState({ loading: false }) })
+            this.handleContactComplete.bind(this))
+    }
+
+    handleContactComplete() {
+        this.setState({ 
+            company: '',
+            employees: '',
+            natureOfBusiness: '',
+            email: '',
+            contactPerson: '',
+            contact: '',
+            message: '',
+            loading: false
+        });
     }
 
     componentDidMount() {

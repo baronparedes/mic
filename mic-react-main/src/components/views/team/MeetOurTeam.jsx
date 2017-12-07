@@ -4,14 +4,19 @@ import TeamMember from './TeamMember'
 
 const data = [
     {
-        title: <span>President<br/>CEO</span>,
-        name: "EDUARDO MICALLER",
+        title: <span>President</span>,
+        name: "EDUARDO P. MICALLER",
         image: "eduardom.png"
     },
     {
         title: <span>Vice President<br/>Admin and Finance</span>,
-        name: "EDITHA MEDINA",
+        name: "EDITHA O. MEDINA",
         image: "editham.png"
+    },
+    {
+        title: <span>Vice President<br/>Research and Development</span>,
+        name: "DHIANNA MONICA B. MICALLER",
+        image: "dhiannam.png"
     },
     {
         title: <span>Vice President for Marketing<br/>Luzon-Visayas & Mindanao Area</span>,
@@ -31,12 +36,7 @@ const data = [
     {
         title: <span>Vice President for Marketing<br/>Metro Manila & South Luzon</span>,
         name: "EDUARDO V. SANTIAGO",
-        image: "blank-photo.png"
-    },
-    {
-        title: <span>Vice President for Marketing<br/>Research and Dev</span>,
-        name: "DHIANNA MONICA B. MICALLER",
-        image: "dhiannam.png"
+        image: "edsantiago.jpg"
     },
     {
         title:<span>Head<br/>Account Management</span>,
@@ -44,7 +44,7 @@ const data = [
         image: "marisolr.png"
     },
     {
-        title:<span>Head<br/>Accounting Service</span>,
+        title:<span>Head<br/>Accounting Servicing</span>,
         name:"KATRINA B. CAPUSO",
         image: "katrinac.png"
     }

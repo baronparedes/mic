@@ -25,8 +25,9 @@ export default class AboutView extends React.Component {
                     <Row>
                         <Col>
                             <AboutDetail label="Our History">
-                                M I C Sales and Marketing Corporation was registered with Securities and Exchange Commission (SEC) on October 30, 2013. As
-                                marketing professionals, our combined experience in the field of HMO, goes with the very first and
+                                On July 24 2009, MIC Sales and Marketing registered with DTI as Single Proprietor. 
+                                On October 30 2013, it registered with Securities and Exchange Commission (SEC) as MIC Sales and Marketing Corporation.
+                                As marketing professionals, our combined experience in the field of HMO, goes with the very first and
                                 pioneer among HMO provider which was established 35 years ago. Our incomparable service begin from
                                 searching the best and reliable provider, negotiate with clients, assist in matrix preparation, handle
                                 presentation, conduct orientation, regular visits to client, telephone servicing, assisting in documentation

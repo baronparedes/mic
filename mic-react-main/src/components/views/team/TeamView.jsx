@@ -12,7 +12,6 @@ class TeamView extends Component {
             <div className="container-fluid">
                 <MeetOurTeam />
                 <hr />
-                <h2>Join us!</h2>
                 <Grid fluid>
                     <Row>
                         <JoinUsDetail title="Be an account manager" details="Earn big income." />
@@ -22,7 +21,7 @@ class TeamView extends Component {
                     </Row>
                 </Grid>
                 <LinkButton to="/contactus">
-                    Contact us!
+                    Join us!
                 </LinkButton>
                 <TeamGallery />
             </div>

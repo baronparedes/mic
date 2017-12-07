@@ -10,12 +10,34 @@ const SeePlan = (props) => {
         <Col lg={6} md={6} sm={6} xs={12} className={"plan-box " + props.className}>
             <div className="padded plan-box-content">
                 <h3>{props.title}</h3>
-                <p>
+                <p className="details">
                     {props.children}
                 </p>
                 <LinkButton to={"/plans" + props.to}>
                     Ask for a Quotation
                 </LinkButton>
+            </div>
+        </Col>
+    )
+}
+
+const SeePlan2 = (props) => {
+    return (
+        <Col lg={6} md={6} sm={6} xs={12}>
+            <div className={"plan-box " + props.className}>
+                <div className="padded plan-box-content">
+                    <h3>{props.title}</h3>
+                </div>
+            </div>
+            <div className="padded plan-box-content">
+                <p className="details">
+                    {props.children}
+                </p>
+                <div className="text-right">
+                    <LinkButton to={"/plans" + props.to}>
+                        Ask for a Quotation
+                    </LinkButton>
+                </div>
             </div>
         </Col>
     )
@@ -40,12 +62,12 @@ class PlansView extends Component {
                 <h2>Available Plans</h2>
                 <Grid fluid>
                     <Row>
-                        <SeePlan className="individual-family-plan" title="Individual or Family" to='/individual'>
+                        <SeePlan2 className="individual-family-plan" title="Individual or Family" to='/individual'>
                             WE ARE EXPOSED TO UNHEALTHY AND HAZARDOUS ENVIRONMENT. THIS IS THE REASON WHY WE NEED TO PROTECT OURSELVES AND OUR FAMILY. MIC IS OFFERING AFFORDABLE BASIC AND COMPREHENSIVE HEALTH CARE AND INSURANCE PROTECTION, SO WE ARE ALWAYS READY IN TIME OF NEEDS.
-                        </SeePlan>
-                        <SeePlan className="group-corporate-plan" title="Corporate or Group" to='/corporate'>
+                        </SeePlan2>
+                        <SeePlan2 className="group-corporate-plan" title="Corporate or Group" to='/corporate'>
                             EMPLOYEES ARE THE MOST VALUABLE ASSET OF THE COMPANY. PRODUCTIVITY MAY SUFFER IF THEY ARE NOT HEALTHY.  MIC IS WILLING TO HELP YOU IN OUTSOURCING FOR THE BEST HEALTH CARE PACKAGE, TAILORED FIT FOR YOUR COMPANY.
-                        </SeePlan>
+                        </SeePlan2>
                     </Row>
                     <hr />
                 </Grid>

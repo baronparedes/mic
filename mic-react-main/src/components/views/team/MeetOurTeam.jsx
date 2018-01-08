@@ -44,7 +44,7 @@ const data = [
         image: "marisolr.png"
     },
     {
-        title:<span>Head<br/>Accounting Servicing</span>,
+        title:<span>Head<br/>Account Servicing</span>,
         name:"KATRINA B. CAPUSO",
         image: "katrinac.png"
     }

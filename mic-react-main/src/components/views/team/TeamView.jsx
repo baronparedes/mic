@@ -14,10 +14,10 @@ class TeamView extends Component {
                 <hr />
                 <Grid fluid>
                     <Row>
-                        <JoinUsDetail title="Be an account manager" details="Earn big income." />
-                        <JoinUsDetail title="Free seminar" details="Product Orientation and Learn the Business." />
+                        <JoinUsDetail title="Be an Account Manager" details="Earn big income." />
+                        <JoinUsDetail title="Attend Seminar" details="Product Orientation and Learn the Business." />
                         <JoinUsDetail title="Be a Leader in your area" details="Earn big income plus benefits." />
-                        <JoinUsDetail title="Do Business in your area" details="Without the need of a capital." />
+                        <JoinUsDetail title="Do Business in your area" details="With / Without Capital." />
                     </Row>
                 </Grid>
                 <LinkButton to="/contactus">

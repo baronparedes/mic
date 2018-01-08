@@ -25,13 +25,14 @@ export default class AboutView extends React.Component {
                     <Row>
                         <Col>
                             <AboutDetail label="Our History">
-                                On July 24 2009, MIC Sales and Marketing registered with DTI as Single Proprietor. 
-                                On October 30 2013, it registered with Securities and Exchange Commission (SEC) as MIC Sales and Marketing Corporation.
-                                As marketing professionals, our combined experience in the field of HMO, goes with the very first and
-                                pioneer among HMO provider which was established 35 years ago. Our incomparable service begin from
-                                searching the best and reliable provider, negotiate with clients, assist in matrix preparation, handle
-                                presentation, conduct orientation, regular visits to client, telephone servicing, assisting in documentation
-                                and stay as the best intermediary between client and provider.
+                                On July 23, 2009, MIC Sales and Marketing registered with DTI as Single Proprietor. 
+                                On October 30, 2013, it was registered with the Securities and Exchange Commission (SEC) 
+                                as MIC Sales and Marketing Corporation. As Marketing Professionals, our combined experience 
+                                in the field of HMO, goes with the pioneer among HMO providers which was established in 
+                                the early part of 1980’s. Our services begin from searching the best and reliable provider, 
+                                negotiate for the competitive rates, assist in matrix preparation, 
+                                handles presentation, conduct orientation, visit client, do telephone servicing, 
+                                assist with documentation and stay as the best intermediary between client and provider.
                             </AboutDetail>
                         </Col>
                     </Row>

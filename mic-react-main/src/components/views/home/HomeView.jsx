@@ -5,10 +5,8 @@ import LinkButton from '../../layout/LinkButton'
 const ServiceItem = (props) => {
     return (
         <li className={props.className}>
-            { 
-                // <i className="fa fa-chevron-right spacer" /> 
-            }
             <h2>
+                <i className="fa fa-chevron-right spacer"/> 
                 {props.children}
             </h2>
         </li>
@@ -21,7 +19,7 @@ export default class HomeView extends React.Component {
             <div className="container-fluid">
                 <div className="container-fluid">
                     <Grid fluid>
-                        <Row className="text-center">
+                        <Row>
                             <Col md={6} lg={6} className="home-content-left">
                                 <ul>
                                     <ServiceItem className="item-1">
@@ -48,13 +46,15 @@ export default class HomeView extends React.Component {
                                 </ul>
                             </Col>
                             <Col md={6} lg={6} className="home-content-right">
+                                <br />
+                                <br />
                                 <h3>
                                     Everytime you venture with us you are helping our poorest of the poor brothers...
                                 </h3>
                                 <Image className="img-kariton" src={require("img/buhay-kariton.jpg")} alt="242x200" responsive />
-                                <h3>
+                                <h4>
                                     No one wants to live a miserable life but this is the only means they know to survive.
-                                </h3>
+                                </h4>
                             </Col>
                         </Row>
                     </Grid>
